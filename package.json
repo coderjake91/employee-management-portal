@@ -1,0 +1,25 @@
+{
+  "name": "employee-management-portal",
+  "version": "1.0.0",
+  "description": "Node.js CLI application that interfaces with a SQL database using MYSQL2, collects user employee information using inquirer npm package and stores that information to the database. The database can then be queried to return stored employee information that is formatted using the  the console.table package.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderjake91/employee-management-portal.git"
+  },
+  "keywords": [
+    "Node.js",
+    "MySQL2",
+    "SQL"
+  ],
+  "author": "coderjake91",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/coderjake91/employee-management-portal/issues"
+  },
+  "homepage": "https://github.com/coderjake91/employee-management-portal#readme"
+}
