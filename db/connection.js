@@ -10,3 +10,5 @@ const db = mysql.createConnection(
         database: 'CMS'
     }
 )
+
+module.exports = db;
