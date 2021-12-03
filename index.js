@@ -21,3 +21,7 @@ Present inquirer options menu
 */
 
 const Interface = require('./lib/Interface');
+
+const interface = new Interface();
+
+interface.allDepartments();

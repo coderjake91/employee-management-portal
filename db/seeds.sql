@@ -5,18 +5,18 @@ values
   ('Engineering'),
   ('Finance');
 
-insert into position (title, salary, department_id)
+insert into role (title, salary, department_id)
 values
-  ('Sales Manager', '100,000', 1),
-  ('Engineering Manager', '250,000', 3),
-  ('Finance Manager', '150,000', 4),
-  ('Software Engineer', '90,000', 3),
-  ('Lawyer', '200,000', 2),
-  ('Sales Engineer', '60,000', 1),
-  ('Analyst', '70,000', 4);
+  ('Sales Manager', '100000.00', 1),
+  ('Engineering Manager', '250000.00', 3),
+  ('Finance Manager', '150000.00', 4),
+  ('Software Engineer', '90000.00', 3),
+  ('Lawyer', '200000.00', 2),
+  ('Sales Engineer', '60000.00', 1),
+  ('Analyst', '70000.00', 4);
 
 
-insert into employee (first_name, last_name, position_id, manager_id)
+insert into employee (first_name, last_name, role_id, manager_id)
 values
   ('Ronald', 'Firbank', 1, NULL),
   ('Virginia', 'Woolf', 2, NULL),
@@ -27,7 +27,7 @@ values
   ('Edward', 'Bellamy', 7, 3),
   ('Montague', 'Summers', 3, 1),
   ('Octavia', 'Butler', 3, 1),
-  ('Unica', 'Zurn', 4, 2);
+  ('Unica', 'Zurn', 4, 2),
   ('James', 'Fraser', 7, 3),
   ('Jack', 'London', 6, 1),
   ('Robert', 'Bruce', 6, 1),

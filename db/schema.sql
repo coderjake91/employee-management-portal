@@ -1,6 +1,6 @@
 drop table if exists department;
-drop table if exists postion;
-drop table if exists employee
+drop table if exists role;
+drop table if exists employee;
 
 
 create table department (
@@ -8,17 +8,20 @@ create table department (
     name varchar(30) not null
 );
 
-create table position (
+create table role (
     id integer auto_increment primary key,
     title varchar(30) not null,
     salary decimal not null,
-    constraint fk_department foreign key (department_id) references departments(id) on delete set null
+    department_id integer,
+    constraint fk_department foreign key (department_id) references department(id) on delete set null
 );
 
 create table employee (
     id integer auto_increment primary key,
-    first_name varchar(30) not null
-    last_name varchar(30)  not null
-    constraint fk_position foreign key (position_id) references positions(id) on delete set null
-    constraint fk_employee foreign key (employee_id) references employees(id) on delete set null
+    first_name varchar(30) not null,
+    last_name varchar(30)  not null,
+    manager_id integer,
+    constraint fk_manager foreign key (manager_id) references employee(id) on delete set null,
+    role_id integer,
+    constraint fk_role foreign key (role_id) references role(id) on delete set null
 );
