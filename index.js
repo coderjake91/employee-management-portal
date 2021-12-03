@@ -24,4 +24,10 @@ const Interface = require('./lib/Interface');
 
 const interface = new Interface();
 
+interface.printMenuHeading('Employee Portal');
+console.log('----------------------------')
 interface.allDepartments();
+console.log('----------------------------')
+interface.allroles();
+console.log('----------------------------')
+interface.allEmployees();
