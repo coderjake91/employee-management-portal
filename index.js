@@ -32,6 +32,11 @@ const employeeObj = {
     manager_id: '2'
 }
 
+const updateRoleObj = {
+    id: '6',
+    role_id: '7'
+}
+
 const Interface = require('./lib/Interface');
 
 const interface = new Interface();
@@ -42,10 +47,12 @@ interface.printMenuHeading('Employee Portal');
 // console.log('----------------------------')
 //interface.allRoles();
 // console.log('----------------------------')
-interface.allEmployees();
+//interface.allEmployees();
 // console.log('----------------------------')
 //interface.addDepartment('Research');
 // console.log('----------------------------')
 // interface.addRole(roleObj);
 // console.log('----------------------------')
 //interface.addEmployee(employeeObj);
+// console.log('----------------------------')
+//interface.updateRole(updateRoleObj);
