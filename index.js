@@ -17,17 +17,25 @@ Present inquirer options menu
 ->add an employeee
 ->update an employee role
 )
-
 */
+const roleObj = {
+    title: 'Machine Learning Engineer',
+    salary: '175000.00',
+    department_id: '3'
+}
 
 const Interface = require('./lib/Interface');
 
 const interface = new Interface();
 
 interface.printMenuHeading('Employee Portal');
-console.log('----------------------------')
-interface.allDepartments();
-console.log('----------------------------')
-interface.allroles();
-console.log('----------------------------')
+// console.log('----------------------------')
+// interface.allDepartments();
+// console.log('----------------------------')
+//interface.allRoles();
+// console.log('----------------------------')
 interface.allEmployees();
+// console.log('----------------------------')
+// interface.addDepartment('Research');
+// console.log('----------------------------')
+// interface.addRole(roleObj);
